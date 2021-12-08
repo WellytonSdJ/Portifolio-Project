@@ -8,60 +8,63 @@
 	--main-font-family: 'Poppins', sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
 }
 
-#main{
+main{
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--main-background);
 }
 
-/* -------------
-    header
----------------- */
+/*────────────────── 
+       header
+──────────────────*/
+
 header{
-    margin: 0 auto;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    background: transparent; /*trabalhar com hover*/
-    top: 0;
-    transition: 0.3s;
-    z-index: 5;
+	margin: 0 auto;
+	width: 100%;
+	height: 70px;
+	display: flex;
+    align-items: center; 
+	justify-content: space-around; 
+    background: transparent;
+	position: fixed;
+	top: 0;
+	transition: 0.3s;
+	z-index: 5;
+}
+.nav-show{
+	opacity: 0;
 }
 
-
-
 header:hover{
-    opacity: 1;
-    background: var(--main-header-background);
+	opacity: 1;
+	background: var(--main-header-background);
 }
 
 .logo img{
-    padding-top: 5;
-    height: 50px;
-    cursor: pointer;
+	padding-top: 5px;
+	height: 50px;
+	cursor: pointer;
 }
 
 .nav-bar{
-    list-style: none;
-    position: relative;
-    display: inline-flex;
+	list-style:none;
+	position: relative;
+	display: inline-flex;
 }
 
 a.nav-link{
-    margin: 2px;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: var(--main-fonts-color);
-    font-family: var(--main-font-family);
+	margin: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
 	cursor: pointer;
 	text-transform: uppercase;
 }
@@ -75,40 +78,53 @@ a.nav-link{
     background: var(--main-decor-color);
 }
 
+/*──────────────────
+       home
+──────────────────*/
 
-/*
-header a {
-    color: black;
-    background: orange;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    text-decoration: none;
+#home{ 	
+	margin: auto;
+	height: 100vh;
+	color: var(--main-fonts-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-#head nav a{
-    color: black;
-    text-decoration: none;
+#home .filter{
+	background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	opacity:.20;
+}  
+
+.intro {
+	text-align:center;
+    color: var(--main-fonts-color);
+	z-index: 1;
+	margin: auto;
+	padding: 20px;
 }
 
-#menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
+.intro  p{
+    margin: 5px;
+	font-size:1.2rem;
+	font-family: var(--main-font-family);
+	text-align:center;
 }
 
-#menu a{
-    color:black;
-    text-decoration: none;
+ h3{
+	padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+	font-style: normal;
+	font-size: 60px;
+	color: var(--main-fonts-color);
+	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
-
-#menu a{
-    background: blue;
-}*/
-
-/* -------------
-    fim do header
----------------- */
-
