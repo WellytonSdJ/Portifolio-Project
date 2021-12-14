@@ -101,7 +101,7 @@ a.nav-link{
     bottom: 0;
     left: 0;
     right: 0;
-	opacity:.8;
+	opacity:.5;
 }  
 
 .intro {
@@ -128,8 +128,8 @@ a.nav-link{
 	font-size: 60px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
+    text-align: center;
 }
-
 
 /*──────────────────
     social media
@@ -161,12 +161,26 @@ a.nav-link{
 	text-shadow: 0 0 50px var(--main-decor-color);
 }
 
-
 /*──────────────────
-      projects
+      Tech
 ──────────────────*/
 
-/* #projects{
+/* <section id="Tech">
+                <h3>Tecnologias</h3>
+                <hr>
+                <div class="card-container">
+                    <article class="card-single">
+                        HTML
+                    </article> */
+#tech {
+    /* background-color: var(--main-header-background); */
+}
+
+/*──────────────────
+      project
+──────────────────*/
+
+#project{
 	margin-top:100px;
     height: 100%;
 	display: flex;
@@ -176,10 +190,10 @@ a.nav-link{
 	text-align:center;
 	color: var(--main-fonts-color);
 }
-#projects h3{
+#project h3{
     padding-top: 70px;
 }
-#projects p{
+#project p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
@@ -206,11 +220,11 @@ a.nav-link{
 
 .card img{
 	width: 100%;
-	height:70%;
+	height: 70%;
 	border-radius:10px 10px 0px 0px;
 }
 
-.card .work-content{
+.card .card-content{
 	text-align: center;
 	padding: 10px 5px;
 	font-size: 1rem;
@@ -223,13 +237,52 @@ a.nav-link{
 	text-decoration: none;
 }
 
-.card .work-content:hover{
+.card .card-content:hover{
     color:#202020;
 }
 
 .card:hover{
-	box-shadow: 0 0 1.5rem gray;
-} */
+	box-shadow: 0 0 1.5rem var(--main-decor-color);;
+}
+
+.card-tech{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 200px;
+	height:250px;
+	border-radius:12px;
+    background:var(--main-fonts-color);
+}
+
+.card-tech img{
+	width: 100%;
+	height: 70%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.card-tech .card-content{
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 1rem;
+	color: black;
+	font-family: var(--main-font-family);
+	cursor: pointer;
+}
+
+.card-tech a{
+	text-decoration: none;
+}
+
+.card-tech .card-content:hover{
+    color:var(--main-decor-color);
+}
+
+.card-tech:hover{
+	box-shadow: 0 0 1.5rem var(--main-decor-color);
+}
+
+
 
 /*──────────────────
       Contact
@@ -368,7 +421,7 @@ hr {
 
 @media only screen and (max-width: 500px) {
 
-	#home, #projects, #contact{
+	#home, #project, #contact{
         overflow-x: hidden;
 	}
 	header{

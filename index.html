@@ -8,7 +8,7 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-	<!-- <!-- <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png"> -->
+	<link href="https://fonts.googleapis.com/css2" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
@@ -28,9 +28,10 @@
 			<nav>
 				<ul class="nav-bar"> <div class="bg"></div>
 					<li><a class="nav-link active" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="tech">Tecnologias</a></li>
-		        	<li><a class="nav-link" href="#project">Projects</a></li>
-		        	<li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#tech">Tecnologias</a></li>
+		        	<li><a class="nav-link" href="#project">Projetos</a></li>
+                    <li><a class="nav-link" href="#about">Sobre</a></li>
+		        	<li><a class="nav-link" href="#contact">Contato</a></li>
 				</ul>
 			</nav>
             <div class="hamburger">
@@ -42,44 +43,94 @@
 		<main>
 			<!-------------------------- home -------------------------->
 			<section id="home">
-                <div class="filter">
-                <div class="intro">
-
-                <h3>Wellyton Sadlovski</h3>
-                <hr>
+                <div class="filter"></div>
+                <section class="intro">
+                <h3>Wellyton Sadlovski <hr></h3>                
                 <p>Dev, nerd, geek e viciado em café!</p>
                 <p>Oi meu nome é Wellyton, mas me chamam de Well!</p>
-                <p>Gosto de técnologia com um todo, tanto nos livros, animes, jogos e com uma pegada de SI-FI e um pouco de fantasia (acho que é por isso que acho Final Fantasy uma das melhores franquias de jogos hahaha! =) )</p>
-                </div>
-                </div>
+                <p>Gosto de técnologia com um todo, tanto nos livros, animes, jogos e com uma pegada de SI-FI e um pouco de fantasia - acho que é por isso que acho Final Fantasy uma das melhores franquias de jogos hahaha! =)</p>
+                </section>
             </section> 
             <!-- Tech -->
-			<section id="Tech">
+			<section id="tech">
                 <h3>Tecnologias</h3>
                 <hr>
-                <div class="container-card">
-                    <article class="card-single">
-                        HTML
+                
+                <div class="work">
+                    <article class="card-tech">
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <!--Link to project-->
+                        <img class="img-card" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1qsw-VaUy4KuboE4m5hb3R6yC8929LCpDQ&usqp=CAU">
+                        <div class="card-content">HTML</div></a>
                     </article>
-                    <article class="card-single">
-                        CSS
+                    <article class="card-tech">
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"> <!--Link to project-->
+                        <img class="img-card" src="https://logospng.org/download/css-3/logo-css-3-2048.png">
+                        <div class="card-content">CSS</div></a>
                     </article>
-                    <article class="card-single">
-                        JS
+                    <article class="card-tech">
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"> <!--Link to project-->
+                        <img class="img-card" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png">
+                        <div class="card-content">Javascript</div></a>
+                    </article>
+                    <article class="card-tech">
+                        <a href="https://pt-br.reactjs.org" target="_blank"> <!--Link to project-->
+                        <img class="img-card" src="https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png">
+                        <div class="card-content">React</div></a>
+                    </article>
+                    <article class="card-tech">
+                        <a href="https://nextjs.org/docs/getting-started" target="_blank"> <!--Link to project-->
+                        <img class="img-card" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/2560px-Nextjs-logo.svg.png">
+                        <br><br>
+                        <div class="card-content">Nextjs</div></a>
+                    </article>
+                    <article class="card-tech">
+                        <a href="https://redux.js.org" target="_blank"> <!--Link to project-->
+                        <img class="img-card" src="https://lh3.googleusercontent.com/proxy/Sw34iBnKsb4Y4imhOR5GoLbISRX3UVhEmvOFKBpHldxzAALmdNRnl70HGUI6g3HsYQLOJmRuRgGNrQ4I7ewlsCvYjXxbzzG4">
+                        <div class="card-content">Redux</div></a>
                     </article>
                 </div>
                 
             </section>
 			<!-- project -->
 			<section id="project">
-                <h3>Projetos</h3>
-                <hr>
-            </section>
+            <h3>Projetos <hr></h3>
+            <p>Aqui temos alguns projetos que criei, espero que goste</p>
+		 <div class="workbox">
+         <div class="work">
+		<!--───────────────card───────────────-->
+			<article class="card">
+			    <img class="img-card" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="card-content">Lorem ipsum dolor sit articlet consectetur.</div></a>
+            </article>
+            <article class="card">
+			    <img class="img-card" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="card-content">Lorem ipsum dolor sit articlet consectetur.</div></a>
+            </article>
+            <article class="card">
+			    <img class="img-card" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="card-content">Lorem ipsum dolor sit articlet consectetur.</div></a>
+            </article>
+            <article class="card">
+			    <img class="img-card" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="card-content">Lorem ipsum dolor sit articlet consectetur.</div></a>
+            </article>
+            </div> 	  
+
+         </div>
+
+         <!-- about -->
+        <section id="about">
+            <h3>Sobre<hr></h3>
+        </section>
+
 			<!-- contact -->
             
-			<section id="contact">
-            <h3>Contatos</h3>
-            <hr>
+		<section id="contact">
+            <h3>Contatos <hr></h3>
             
             <!---------------------social media links -------------------------->
                 <!--  JOGAR PRA BAIXO ISSO        
@@ -95,12 +146,13 @@
                 </a> -->
             <!---------------------social media links -------------------------->
             </section>
-            
+         </div>
+		  </div>
+	  </div>
+            </section>            
         </main>
 	</div>
-	<script src="script.js">
-
-	</script>
+	<script src="script.js"></script>
 </body>
 
 </html>
