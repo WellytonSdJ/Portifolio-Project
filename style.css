@@ -105,7 +105,7 @@ a.nav-link{
 }  
 
 .intro {
-	text-align:center;
+	text-align: center;
     color: var(--main-fonts-color);
 	z-index: 1;
 	margin: auto;
@@ -116,7 +116,7 @@ a.nav-link{
     margin: 5px;
 	font-size:1.2rem;
 	font-family: var(--main-font-family);
-	text-align:center;
+	text-align: center;
 }
 
  h3{
@@ -147,9 +147,14 @@ a.nav-link{
     margin: 10px;
     font-size: 2rem;
     text-align:center;
+    border-radius:12px;
     display: inline-block;
 	color: var(--main-fonts-color);
-    background: red;
+    background: var(--main-fonts-color);
+}
+
+.social-media a {
+    text-shadow: 0 0 50px var(--main-decor-color);
 }
 
 .social-media a img{
@@ -158,23 +163,51 @@ a.nav-link{
 
 .social-media a:hover {
 	color: var(--main-decor-color);
-	text-shadow: 0 0 50px var(--main-decor-color);
+	box-shadow: 0 0 50px var(--main-decor-color);
 }
 
 /*──────────────────
       Tech
 ──────────────────*/
 
-/* <section id="Tech">
-                <h3>Tecnologias</h3>
-                <hr>
-                <div class="card-container">
-                    <article class="card-single">
-                        HTML
-                    </article> */
-#tech {
-    /* background-color: var(--main-header-background); */
+
+.card-tech{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 200px;
+	height:250px;
+	border-radius:12px;
+    background:var(--main-fonts-color);
 }
+
+.card-tech img{
+	width: 100%;
+	height: 70%;
+	border-radius:10px 10px 0px 0px;
+}
+
+.card-tech .card-content{
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 1rem;
+	color: black;
+	font-family: var(--main-font-family);
+	cursor: pointer;
+}
+
+.card-tech a{
+	text-decoration: none;
+}
+
+.card-tech .card-content:hover{
+    color:var(--main-decor-color);
+}
+
+.card-tech:hover{
+	box-shadow: 0 0 1.5rem var(--main-decor-color);
+}
+
 
 /*──────────────────
       project
@@ -235,6 +268,7 @@ a.nav-link{
 
 .card a{
 	text-decoration: none;
+    font-size: 20px;
 }
 
 .card .card-content:hover{
@@ -245,49 +279,12 @@ a.nav-link{
 	box-shadow: 0 0 1.5rem var(--main-decor-color);;
 }
 
-.card-tech{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
-    background:var(--main-fonts-color);
-}
-
-.card-tech img{
-	width: 100%;
-	height: 70%;
-	border-radius:10px 10px 0px 0px;
-}
-
-.card-tech .card-content{
-	text-align: center;
-	padding: 10px 5px;
-	font-size: 1rem;
-	color: black;
-	font-family: var(--main-font-family);
-	cursor: pointer;
-}
-
-.card-tech a{
-	text-decoration: none;
-}
-
-.card-tech .card-content:hover{
-    color:var(--main-decor-color);
-}
-
-.card-tech:hover{
-	box-shadow: 0 0 1.5rem var(--main-decor-color);
-}
-
 
 
 /*──────────────────
       Contact
 ──────────────────*/
-/* 
+
 #contact{
 	margin: auto;
 	padding-bottom: 20px;
@@ -305,7 +302,7 @@ a.nav-link{
 	font-size:1.2rem;
 	font-family: var(--main-font-family);
 }
-*/
+
 
 /*────────────────── 
        footer
@@ -419,7 +416,7 @@ hr {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
 	#home, #project, #contact{
         overflow-x: hidden;
@@ -461,8 +458,21 @@ hr {
 	.nav-bar li{
 		opacity:0;
 	}
+
+    .intro{
+        margin-top: 10rem;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 
 .nav-active{
 	transform:translatex(0%);
+}
+
+@media only screen and (max-width: 410px){
+    overflow-wrap: normal;
 }
