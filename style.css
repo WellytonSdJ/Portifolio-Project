@@ -3,8 +3,9 @@
 :root{
 	--main-background: #0b0c0f;
 	--main-fonts-color: #Ffff;
+	--second-fonts-color: #0b0c0f;
 	--main-decor-color:#FF671F;;
-    --main-header-background:#525252;
+  --main-header-background:#525252;
 	--main-font-family: 'Poppins', sans-serif;
 }
 
@@ -149,13 +150,15 @@ a.nav-link{
     text-align:center;
     border-radius:12px;
     display: inline-block;
-	color: var(--main-fonts-color);
+		color: var(--main-fonts-color);
     background: var(--main-fonts-color);
+		
+		text-shadow: 0 0 50px var(--main-decor-color);
+		transition: .3s;
 }
 
-.social-media a {
-    text-shadow: 0 0 50px var(--main-decor-color);
-}
+/* .social-media a {
+} */
 
 .social-media a img{
 	cursor: pointer;
@@ -191,21 +194,28 @@ a.nav-link{
 	text-align: center;
 	padding: 10px 5px;
 	font-size: 1rem;
-	color: black;
+	
+	text-transform: uppercase;
+	color: var(--second-fonts-color);
 	font-family: var(--main-font-family);
+	font-weight: bold;
+
 	cursor: pointer;
 }
 
 .card-tech a{
 	text-decoration: none;
+	width: 100%;
+	height: 100%;
 }
 
-.card-tech .card-content:hover{
+.card-tech .card-content a{
     color:var(--main-decor-color);
-}
-
-.card-tech:hover{
-	box-shadow: 0 0 1.5rem var(--main-decor-color);
+	}
+	
+	.card-tech a:hover{
+		box-shadow: 0 0 1.5rem var(--main-decor-color);
+		transition: .3s;
 }
 
 
@@ -248,7 +258,7 @@ a.nav-link{
 	width: 200px;
 	height:250px;
 	border-radius:12px;
-    background:var(--main-decor-color);
+  background:var(--main-decor-color);
 }
 
 .card img{
@@ -276,7 +286,8 @@ a.nav-link{
 }
 
 .card:hover{
-	box-shadow: 0 0 1.5rem var(--main-decor-color);;
+	box-shadow: 0 0 1.5rem var(--main-decor-color);
+	transition: .3s;
 }
 
 
@@ -472,7 +483,7 @@ hr {
 .nav-active{
 	transform:translatex(0%);
 }
-
+/* 
 @media only screen and (max-width: 410px){
     overflow-wrap: normal;
-}
+} */
