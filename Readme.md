@@ -1,6 +1,6 @@
 ## Portfolio Project
 ----------------------
-[Para consultá-lo clique aqui](https://wellytonsdj-portfolio.vercel.app)
+[Para consultá-lo clique aqui](https://wellytonsj.vercel.app)
 
 Esse projeto foi criado pra servir como suporte pra apresentar tanto este e outros projetos meus.
 
